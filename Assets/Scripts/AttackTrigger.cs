@@ -27,7 +27,7 @@ public class AttackTrigger : MonoBehaviour
     public void Attack(GameObject player)
     {
         Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
-        foreach (BoxCollider2D enemyGameobject in enemy)
+        foreach (Collider2D enemyGameobject in enemy)
         {
             Debug.Log("Attack");
             enemyGameobject.GetComponent<EnemyHP>().health -= dmg;
