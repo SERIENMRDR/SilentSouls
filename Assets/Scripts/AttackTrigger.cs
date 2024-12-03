@@ -26,12 +26,15 @@ public class AttackTrigger : MonoBehaviour
     
     public void Attack(GameObject player)
     {
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
-        foreach (Collider2D enemyGameobject in enemy)
+        if (player.GetComponent<PlayerHP>().mana >= 5)
         {
-            Debug.Log("Attack");
-            enemyGameobject.GetComponent<EnemyHP>().health -= dmg;
             player.GetComponent<PlayerHP>().mana -= 5;
+            Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+            foreach (Collider2D enemyGameobject in enemy)
+            {
+                Debug.Log("Attack");
+                enemyGameobject.GetComponent<EnemyHP>().health -= dmg;
+            }
         }
     }
     
