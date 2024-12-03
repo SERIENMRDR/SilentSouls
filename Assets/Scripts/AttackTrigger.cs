@@ -11,19 +11,6 @@ public class AttackTrigger : MonoBehaviour
     public GameObject attackPoint;
     public float radius;
     public LayerMask enemies;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    
     public void Attack(GameObject player)
     {
         if (player.GetComponent<PlayerHP>().mana >= 5)
@@ -37,8 +24,6 @@ public class AttackTrigger : MonoBehaviour
             }
         }
     }
-    
-
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position,radius);
