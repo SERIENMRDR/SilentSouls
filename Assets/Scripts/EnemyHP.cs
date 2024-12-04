@@ -7,6 +7,7 @@ public class EnemyHP : MonoBehaviour
 {
     public float health;
     public float maxHealth;
+    public GameObject player;
 
 
     // Start is called before the first frame update
@@ -21,6 +22,8 @@ public class EnemyHP : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            player.GetComponent<PlayerHP>().mana += 20;
+            player.GetComponent<PlayerHP>().health += 5;
         }
     }
 }

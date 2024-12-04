@@ -11,7 +11,9 @@ public class AttackTrigger : MonoBehaviour
     public GameObject attackPoint;
     public float radius;
     public LayerMask enemies;
-    public void Attack(GameObject player)
+    public GameObject player;
+    
+    public void Attack()
     {
         if (player.GetComponent<PlayerHP>().mana >= 5)
         {
