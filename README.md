@@ -4,7 +4,7 @@ A Brutal 2D Hack 'n Slash Action Game
 #Overview
 Silent Souls is a fast-paced, high-difficulty 2D hack 'n slash game set in a dark, unforgiving world. With fluid combat and precise mechanics, players will face relentless enemies, towering bosses, and treacherous dungeons as they navigate through a grim, interconnected world. Inspired by Dead Cells and Dark Souls, the game offers a challenging, high-stakes experience where every encounter is a test of skill, reflexes, and strategy.
 
-#Features
+# Features
 - Fast-Paced Combat: Engage in fluid, skill-based combat where every attack, dodge, and parry matters.
 - Challenging Difficulty: Relentless enemies, fierce bosses, and hidden traps await. Only the most skilled players will survive.
 2D Pixel Art: A dark, atmospheric world brought to life with hand-drawn pixel art, offering detailed environments and haunting visuals.
