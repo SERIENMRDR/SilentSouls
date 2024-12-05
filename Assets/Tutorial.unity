@@ -337,95 +337,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &700795201 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5645025038553484620, guid: d2d26eff88d40394984e001931a05896, type: 3}
-  m_PrefabInstance: {fileID: 6287854521136728791}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &700795209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700795201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  target: {fileID: 750361762}
---- !u!114 &700795210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700795201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 5
-  radius: 0.5
-  height: 2
-  canMove: 1
-  maxSpeed: 10
-  gravity: {x: NaN, y: NaN, z: NaN}
-  groundMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  centerOffsetCompatibility: NaN
-  repathRateCompatibility: NaN
-  canSearchCompability: 0
-  orientation: 1
-  enableRotation: 1
-  autoRepath:
-    mode: 2
-    interval: 0.5
-    sensitivity: 10
-    maximumInterval: 2
-    visualizeSensitivity: 0
-  targetCompatibility: {fileID: 0}
-  maxAcceleration: -2.5
-  rotationSpeed: 360
-  slowdownDistance: 0.6
-  pickNextWaypointDist: 2
-  endReachedDistance: 0.2
-  alwaysDrawGizmos: 0
-  slowWhenNotFacingTarget: 1
-  whenCloseToDestination: 1
-  constrainInsideGraph: 0
---- !u!114 &700795211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700795201}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  drawGizmos: 1
-  detailedGizmos: 0
-  startEndModifier:
-    addPoints: 0
-    exactStartPoint: 3
-    exactEndPoint: 3
-    useRaycasting: 0
-    mask:
-      serializedVersion: 2
-      m_Bits: 4294967295
-    useGraphRaycasting: 0
-  traversableTags: -1
-  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  graphMask:
-    value: -1
 --- !u!4 &750361762 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6073945836611608706, guid: 6532425b81406ed45a50b400c92c3f3f, type: 3}
@@ -598,6 +509,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2920784945584667583, guid: d2d26eff88d40394984e001931a05896, type: 3}
+      propertyPath: maxSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920784945584667583, guid: d2d26eff88d40394984e001931a05896, type: 3}
+      propertyPath: enableRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937002959294668283, guid: d2d26eff88d40394984e001931a05896, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 750361762}
     - target: {fileID: 5645025038553484620, guid: d2d26eff88d40394984e001931a05896, type: 3}
       propertyPath: m_Name
       value: Test Enemy (1)
@@ -686,7 +609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAIIexNPvIHWQIAABIFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzk3HpAVKb60hpAcSJrSTiy+KtcYaZMmjjwDJ8N+7K9vYodMTmvfe7r79MO9MaldD7o1dWSnWRgD7PmL0Zp9GPXkPR74zeivfoNM8S+FLEvGoeeJeGsTHFOZMBd7K/IfeKRInCAYtC2OrpdhBapx3CBdcOUDKGk/RGqH3ETviz82cQk74up3R6w1f82R0xmcO2oPtpZ2wkzWqoHPFqxoEWe7F4049bmQam2kVZDw3SknXOmH+VMdOU167gH2gQEiOncXypC9B7kpPLofBj0XhwLeWLD8tpMUBNVnZT9NMreJu3/h65SpQndvJNHpqkq7/4W/GkS6sqe67uuOEavhS5vsnfsq584OxDuHFR+NBH7ja8xcFzyXoB7OyJmiBpLeBQoOD28Ug1aW3tIR83+sar1dgqP+/HWriHNs/pkpWL0R9/toAW2XiwOPuweJqfqHjeBmuTYEoufjj4DffDU+oJe6kdR6ptk1N9l5MsCRlyzg06ib41FgNEW5N16C58qcNpvHXO7ziBmWvmDtOH0tbvOW6b+AqJMK9PkmuqI05XLblSnNYgysfg1dSQ2+aiAecU2q0bk7MfSQpahtswfNB1C5I8fG02Hwm5rPZZDoRIpkWX2Y338RETIpEAIynxXTGWbw9qbFNrjaNz3Y6uDTdJ9d4Z91fyGhleR2vXVh+WMm3ygz8SV2YbW4B9GOToZuQA4tF8KsUSyFxPlvwXuq4bvaeMWXyPYjskiiLnS6P3vKsz5KxWr4aT0jG0vifkTGCL6e8sfAq4UDFu2Rndv4LUEsDBBQAAAgIAAAIIeyZLrAZbQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSpXmKpbm5qZlpSoqBWZqxua5FimmKaZpBSmqqoVmamXmiUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAIIexNPvIHWQIAABIFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAIIeyZLrAZbQAAAHgAAAAJACQAAAAAAAAAAAAAAKYCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAXgMAAAAA
+    dataString: UEsDBBQAAAgIAAAIIey2AbGReAIAADAFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1v4jAQ/SvI521lAklgb7sppXtoi0pXveTixhNi4diRPwq04r+v7SQkRdoTw5uZN28+nC/EhG6gMFKtFaOPkgL6OUHeRj8mg/MBjmQnxZZ9Qh/zxqipfBAJMS/EMOnwqU/TsgajWPFL7LgPxg60gpVS1Su6g0xqox1cEq7BuZQ0Pls46GuCju7nZulTTs6KUm99OmuJJ2dnFiAMqHFokt7Gy2TRJUwXOLpN8Sydd3n4FmM8i6LZfBEv5oHDioKTugHqGxqo4qTniEKYcK12Eb6tQnLOdKcTmVMT5pCRRlvXpQugjLi+gzgfXwHbVcb3ME5+LksNphuKIqc7ptz4Wlb0W7YzrYnet7o+CLe+ThQnQVNL+vhff6lk/dAXnmJfxFSs2L+QU0G0GU19DN99V27FgfA9eefwVoF4kmslraDOaZT1qVZDdDf8vfSWVVDsB7zVegXaZhh4v+R+xTfTyfkc2j9mnNXvYXvzFthyGQYeLgOUW80fJzjcje4oHOpV/NXwSnbjA+sc90xp41xdl8LLe5dW+VC0CjPz3ViTSSUgwJ3oBgTh5rRxNOZ6h1e+Udkrzz3xT6kr3vn6F3KVEuAhHuMr10YeLsvSlTw8gq6ereFMwCDaO57cnDIpRHti+rvTZ22tKkkxytpZRr+fFlqmdJmmcRJTipNylt4saEzjElOAaVImKUHh9JhwbRK+aXV203FLEwO5cGfWf2Ama0WacO1UkcOafdZypI+JUm4LBSCeW4Z+QhqUK+JeJV1R5uazBWOYCOtGXznistgDzS9Eeeh0dTSK5ANLjhr2IY1HcpSFL0qOPHw55Y2CDwYHX7wnO6PzP1BLAwQUAAAICAAACCHsmS6wGW0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNdRUEovSizIKAaKGII4pZkpIHa0kqV5iqW5uamZaUqKgVmasbmuRYppimmaQUpqqqFZmpl5olIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAACCHstgGxkXgCAAAwBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAACCHsmS6wGW0AAAB4AAAACQAkAAAAAAAAAAAAAADFAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAH0DAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -3268,6 +3191,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2920784945584667583, guid: d2d26eff88d40394984e001931a05896, type: 3}
+      propertyPath: maxSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2937002959294668283, guid: d2d26eff88d40394984e001931a05896, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 750361762}
     - target: {fileID: 5645025038553484620, guid: d2d26eff88d40394984e001931a05896, type: 3}
       propertyPath: m_Name
       value: Test Enemy
@@ -3323,16 +3254,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5645025038553484620, guid: d2d26eff88d40394984e001931a05896, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 700795211}
-    - targetCorrespondingSourceObject: {fileID: 5645025038553484620, guid: d2d26eff88d40394984e001931a05896, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 700795210}
-    - targetCorrespondingSourceObject: {fileID: 5645025038553484620, guid: d2d26eff88d40394984e001931a05896, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 700795209}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2d26eff88d40394984e001931a05896, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

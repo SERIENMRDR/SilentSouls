@@ -32,7 +32,7 @@ public class PlayerHP : MonoBehaviour
         manaBar.value = mana;
         manaBar.maxValue = maxMana;
 
-        mana += 0.06f;
+        mana += 0.02f;
 
 
         if (health <= 0)
