@@ -24,14 +24,10 @@ public class Pause : MonoBehaviour
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
-        Debug.Log("Pause Game");
-        Time.timeScale = 0;
     }
 
     public void ResumeGame(GameObject pauseMenu)
     {
         pauseMenu.SetActive(false);
-        Debug.Log("Resume Game");
-        Time.timeScale = 1;
     }
 }
