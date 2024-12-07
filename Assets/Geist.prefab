@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 9054966807771321833}
   - component: {fileID: 7767128562225060157}
   m_Layer: 9
-  m_Name: Test Enemy
+  m_Name: Geist
   m_TagString: Enemy
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
