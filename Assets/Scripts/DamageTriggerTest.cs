@@ -10,7 +10,20 @@ public class DamageTriggerTest : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            playerHP.health -= dmg;
+            InvokeRepeating("Attack", 0f, 1.0f);
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            CancelInvoke("Attack");
+        }
+    }
+
+    public void Attack()
+    {
+            playerHP.health -= dmg;
     }
 }
