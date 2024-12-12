@@ -5,11 +5,9 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
 
+    bool isActive = false;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
 
     public GameObject pauseMenu;
     // Update is called once per frame
@@ -23,11 +21,22 @@ public class Pause : MonoBehaviour
 
     public void PauseGame()
     {
-        pauseMenu.SetActive(true);
+        if(isActive)
+        {
+            pauseMenu.SetActive(false);
+            isActive = false;
+        }
+        else if(!isActive)
+        {
+            pauseMenu.SetActive(true);
+            isActive = true;
+        }
+       
     }
 
-    public void ResumeGame(GameObject pauseMenu)
+    public void ResumeGame()
     {
         pauseMenu.SetActive(false);
+        isActive = false;
     }
 }
