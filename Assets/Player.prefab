@@ -15,11 +15,13 @@ GameObject:
   - component: {fileID: 8915214878429455440}
   - component: {fileID: 4907956550582274618}
   - component: {fileID: 8819796534369845137}
+  - component: {fileID: 5013257538758857356}
   - component: {fileID: 2988208714320946133}
+  - component: {fileID: 883691136978561886}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
-  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -172,7 +174,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   speed: 10
-  jumpingPower: 30
+  jumpingPower: 20
 --- !u!114 &4907956550582274618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,12 +187,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d954f3544f38cba459629ebe5047281b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmg: 10
+  dmg: 5
   attackPoint: {fileID: 7836138933956619376}
-  radius: 1.1
+  radius: 1.3
   enemies:
     serializedVersion: 2
     m_Bits: 512
+  player: {fileID: 8819796534369845137}
 --- !u!114 &8819796534369845137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +212,19 @@ MonoBehaviour:
   mana: 0
   maxMana: 100
   manaBar: {fileID: 0}
+--- !u!114 &5013257538758857356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2589735789823547867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbf2a20ed205d743a05e8b5eb002485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
 --- !u!114 &2988208714320946133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,46 +283,6 @@ MonoBehaviour:
     m_ActionId: 961b6261-44a1-44cd-8ae3-a2862de182e8
     m_ActionName: Player/Jump[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 089d37ea-55c1-4ee3-951a-04cb8f6112e7
-    m_ActionName: UI/Navigate[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: eed1b14d-5b41-4f83-8e09-cad4d7367b4c
-    m_ActionName: UI/Submit[/Keyboard/enter]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: acc2606b-5f1d-440a-8a4d-897b488e0039
-    m_ActionName: UI/Cancel[/Keyboard/escape]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: fdc3cbc1-6e2d-4f56-89ef-25a27bb9bc30
-    m_ActionName: UI/Point[/Mouse/position,/Pen/position]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 3323cf81-2314-4d84-a7df-ecbaaa6462e0
-    m_ActionName: UI/Click[/Mouse/leftButton,/Pen/tip]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b11ca878-7d85-45c2-9095-4dee75649fa3
-    m_ActionName: UI/ScrollWheel[/Mouse/scroll]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 2a23378b-3e9e-4fae-8dd6-0dae38b6f002
-    m_ActionName: UI/MiddleClick[/Mouse/middleButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: bbfb183f-09ae-4786-8460-7bd312093ec1
-    m_ActionName: UI/RightClick[/Mouse/rightButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 03ffbb2a-7f8d-422d-8d31-4b36fc0ab315
-    m_ActionName: UI/TrackedDevicePosition
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: c488cb05-4374-4ef0-ad7a-d26f125d5078
-    m_ActionName: UI/TrackedDeviceOrientation
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4907956550582274618}
         m_TargetAssemblyTypeName: AttackTrigger, Assembly-CSharp
@@ -322,11 +298,35 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 537f884d-8e2e-4342-8421-43c68f11fe49
     m_ActionName: Player/Attack[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 1b143da6-17fd-4479-aa71-a87987e87614
+    m_ActionName: UI/Pause[/Keyboard/escape]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!81 &883691136978561886
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2589735789823547867}
+  m_Enabled: 1
 --- !u!1 &5580730512510498586
 GameObject:
   m_ObjectHideFlags: 0

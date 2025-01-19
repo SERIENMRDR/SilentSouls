@@ -15,9 +15,9 @@ public class AttackTrigger : MonoBehaviour
     
     public void Attack()
     {
-        if (player.mana >= 5)
+        if (player.mana >= 50)
         {
-            player.mana -= 5;
+            player.mana -= 50;
             Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
             foreach (Collider2D enemyGameobject in enemy)
             {
