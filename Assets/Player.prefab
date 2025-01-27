@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 8819796534369845137}
   - component: {fileID: 5013257538758857356}
   - component: {fileID: 2988208714320946133}
-  - component: {fileID: 883691136978561886}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -174,7 +173,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   speed: 10
-  jumpingPower: 20
+  jumpingPower: 30
 --- !u!114 &4907956550582274618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,14 +318,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!81 &883691136978561886
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2589735789823547867}
-  m_Enabled: 1
 --- !u!1 &5580730512510498586
 GameObject:
   m_ObjectHideFlags: 0

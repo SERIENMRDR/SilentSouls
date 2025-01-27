@@ -1,4 +1,4 @@
-Susing System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,7 +34,7 @@ public class PlayerHP : MonoBehaviour
 
         if (mana <= 100)
         {
-            mana += 0.5f;
+            mana += 0.7f;
         }
         
         if (health <= 0)

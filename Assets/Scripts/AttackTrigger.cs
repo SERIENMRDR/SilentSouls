@@ -15,10 +15,11 @@ public class AttackTrigger : MonoBehaviour
     
     public void Attack()
     {
-        if (player.mana >= 50)
+        if (player.mana >= 20)
         {
-            player.mana -= 50;
-            Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+            player.mana -= 20;
+            Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius,
+                enemies);
             foreach (Collider2D enemyGameobject in enemy)
             {
                 enemyGameobject.GetComponent<EnemyHP>().health -= dmg;
